@@ -27,3 +27,18 @@ Environment setup for development
 ```
 grunt watch
 ```
+ * grunt watch command will keep checking SCSS file update and compile CSS immediately
+
+ Project Directory
+ ---------------------------------
+
+### VAIDYA project top level directory structure
+    ├── style                   # Compiled files (alternatively `css`)
+    ├── JS                     # JS files (alternatively `JS`)
+    ├── test                    # Automated tests (alternatively `spec` or `tests`)
+    ├── tools                   # Tools and utilities
+    ├── index.html              # Home page html
+    └── README.md               # Project setup is mentioned here
+    └── Gruntfile.js            # Build file to compile CSS
+    └── package.json            # node modules are listed here
+    └── README.md

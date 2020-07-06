@@ -6,8 +6,8 @@ Development Setup tools require
 - [Visual Code](https://code.visualstudio.com/download)
  -- install Plugin [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - [Node](https://nodejs.org/en/)
-- [browser - Chrome] (https://www.google.com/chrome/?brand=CHBD&gclid=Cj0KCQjwl4v4BRDaARIsAFjATPnAbu4TpXtUJIYBiVYlyqbkpX72BHz7HjhRcJ4pbLZb6koOpTTWjTYaAmOYEALw_wcB&gclsrc=aw.ds)
-- [Git] (https://git-scm.com/downloads)
+- [browser - Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=Cj0KCQjwl4v4BRDaARIsAFjATPnAbu4TpXtUJIYBiVYlyqbkpX72BHz7HjhRcJ4pbLZb6koOpTTWjTYaAmOYEALw_wcB&gclsrc=aw.ds)
+- [Git](https://git-scm.com/downloads)
 
 
 Environment setup for development

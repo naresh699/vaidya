@@ -41,4 +41,3 @@ grunt watch
     └── README.md               # Project setup is mentioned here
     └── Gruntfile.js            # Build file to compile CSS
     └── package.json            # node modules are listed here
-    └── README.md

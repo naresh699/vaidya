@@ -12,11 +12,15 @@ Development Setup tools require
 
 Environment setup for development
 ---------------------------------
-- First, [clone the jQuery git repo](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+- First, [clone the jQuery git repo](https://github.com/naresh699/vaidya).
+- Clone repository
+```bash
+  git clone https://github.com/naresh699/vaidya
+```
 
 - Then, enter the 'Vaidya' directory and run the node module installation script:
 ```bash
-cd jquery && npm run i
+ npm run i
 ```
 
 - Now by running the `grunt` command, in the jquery directory, you can build a full version of jQuery, just like with an `npm run build` command:

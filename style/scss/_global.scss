@@ -1,0 +1,50 @@
+#wrapper{
+    margin: auto;
+    overflow: hidden;
+    @include breakpoint(medium){
+        max-width: 1200px;
+    }
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hide{
+    display: none;
+}
+ul {
+    list-style: none;
+}
+img{max-width: 100%;}
+.hide{
+    display: none;
+}
+
+.md-hide{
+    @include breakpoint(medium){
+       display: none;
+    }
+}
+
+.sm-hide{
+    @include breakpoint(small){
+       display: none;
+    }
+}
+
+.overlay{
+    width: 100vw; 
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    opacity: 0.3;
+    display: none;
+    &.show{
+        display: block;
+    }
+}

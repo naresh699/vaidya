@@ -1,0 +1,54 @@
+.Navigation{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    display: none;
+    @include breakpoint(small){
+        position: static;
+        display: block;
+        width: 100%;
+    }
+    &_menu{
+        background-color: $menuBg;
+        @include breakpoint(small){
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            background-color:transparent;
+            border: none;
+            width: 70%;
+            margin: auto;
+        }
+    }
+    &_list{
+        border-bottom:1px solid $subMenuBg;
+        @include breakpoint(small){
+            position: relative;
+            border: none;
+        }
+        &:hover .Navigation_sub{
+            display: block;
+        }
+    }
+    &_link, &_sublink{
+        display: block;
+        padding: 10px;
+        text-align: left;
+        text-decoration: none;
+        color: $black;
+        text-transform: uppercase;
+    }
+    &_subList{
+        padding-left: 10px;
+    }
+
+    &_sub{
+        background-color: $menuBg;
+        @include breakpoint(small){
+            position: absolute;
+             top: 40px;
+             left: 0;
+             display: none;
+         }
+    }
+}

@@ -1,0 +1,54 @@
+
+.promo-banner{
+    background-color: #253746;
+    text-align: center;
+    padding: $g_pd;
+    color: $white;
+}
+
+.Header{
+    position: relative;
+    z-index: 11;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 20px auto 100px;
+    @include breakpoint(small){
+        grid-template-columns: 100px auto 100px;
+    }
+    align-items: center;
+    background-color: white;
+    &_logo{
+        transform: translate(45%, 0px);
+        @include breakpoint(small){
+            transform: none;
+        }
+    }
+}
+
+.hamburger {
+    cursor: pointer;
+}
+
+.SearchForm{
+    position: relative;
+    background-color: pink;
+    padding: 10px;
+    .search{
+        width: 100%;
+        border-radius: 2px;
+        font-size: 20px;
+        padding: 5px;
+        border: 1px solid #fefefe;
+        &:focus{
+            outline: none;
+        }
+    }
+    .searchButton{
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        font-size: 20px;
+        padding: 0px;
+        background: none;
+    }
+}

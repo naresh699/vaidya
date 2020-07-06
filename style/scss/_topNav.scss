@@ -1,0 +1,9 @@
+.TopNav{
+    ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &_list{
+        text-align: right;
+    }
+}

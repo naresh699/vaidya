@@ -1,0 +1,43 @@
+/* footer */
+.Footer{
+    display: grid;
+    text-align: center;
+    margin: $v_mr;
+    @include breakpoint(medium){
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+    }
+    padding: $g_pd;
+    background-color: cornsilk;
+    &_child{
+        margin: 10px;
+    }
+}
+
+.FooterLink{
+    text-align: center;
+    &_list{
+        display: inline-block;
+        padding: 0 10px;
+        border-right: 1px solid pink;
+        &:last-child{
+            border:none;
+        }
+    }
+    &_link{
+        text-decoration: none;
+        color: $black;
+    }
+}
+
+.CcDetail{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    &_list{
+        display: inline-block;
+        padding: 0 10px;
+        width: 80px;
+    }
+}

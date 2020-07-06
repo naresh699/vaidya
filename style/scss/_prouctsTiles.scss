@@ -1,0 +1,22 @@
+.ProductList{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(2, 200px);
+    @include breakpoint(medium){
+        grid-template-columns: repeat(3, 200px);
+    }
+    @include breakpoint(large){
+        grid-template-columns: repeat(4, 200px);
+    }
+}
+
+.ProdTile{
+    margin-bottom: $v_mr;
+    background-color: $gray;
+    padding: 10px;
+    &_button {
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

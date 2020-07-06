@@ -1,0 +1,51 @@
+// color variable
+$black : #000;
+$white: #fff;
+$red: red;
+$pink: pink;
+
+// bg color
+$menuBg : #FAF6F6;
+$subMenuBg: #F9DFDB;
+$gray: #F6F6FA;
+
+// global padding from page border
+$g_pd: 0px 10px;
+$v_mr: 20px 0;
+
+// breakpoint mixin
+$breakpoints: (
+  'small':  ( min-width:  767px ),
+  'medium': ( min-width:  992px ),
+  'large':  ( min-width: 1200px )
+) !default;
+
+@mixin breakpoint($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media #{inspect(map-get($breakpoints, $breakpoint))} {
+        @content;
+        }
+    }
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+            + "Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+}
+
+.button{
+    border: none;
+    background-color: none;
+    padding: 10px;
+    &--dark{
+        background-color: $black;
+        color: $white;
+    }
+    &--pink{
+        background-color: $pink;
+        color: $black;
+    }
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    &:hover{
+        opacity: 0.7;
+    }
+}

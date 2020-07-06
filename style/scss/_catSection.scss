@@ -1,0 +1,21 @@
+.CatNav{
+    margin: $v_mr;
+    &_list{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &_link{
+        width: 100px;
+        height: 100px;
+        background-color: burlywood;
+        text-align: center;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            color: $black;
+            text-decoration: none;
+        }
+    }
+}
